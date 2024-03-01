@@ -335,3 +335,46 @@ header .container{
 .hero_img{
     text-align: right;
 }
+
+
+@media  screen and (max-width:768px ) {
+    
+    .hero_content h4{
+        font-size: 16px;
+    }
+    .hero_content h1{
+        font-size: 32px;
+
+    }
+
+    .hero_content p{
+        font-size: 15px;
+    }
+
+}
+
+
+
+@media screen and (max-width:576px ){
+    .hero_container{
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+        justify-content: center;
+    }
+
+    .hero_content{
+        order: 2;
+        text-align: center;
+
+    }
+
+    .hero_social{
+        justify-content: center;
+    }
+
+
+    .hero_img{
+        text-align: center;
+    }
+
+}
