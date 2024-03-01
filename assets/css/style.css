@@ -450,3 +450,125 @@ header .container{
     }
 
 }
+
+
+
+
+/* ============== Resume Section ============== */
+
+.resume_container{
+    grid-template-columns: 1fr 5fr;
+}
+
+.resume_tabs ul{
+    position: static;
+    top: 150px;
+   position: -webkit-sticky;
+}
+
+.resume_tabs ul li a{
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: block;
+    color: #222;
+    position: relative;
+    transition: .3s;
+}
+
+.resume_tabs ul li a.current{
+    color: var(--main-color);
+    margin-left: 20px;
+    position: relative;
+}
+
+.resume_tabs ul li a.current::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    top: 50%;
+    width: 30px;
+    left: -35px;
+    transform: translateX(-50%);
+    background-color: var(--main-color);
+}
+
+.page{
+    margin-bottom: 70px;
+}
+
+
+.page_heading{
+    font-size: 25px;
+    color: var(--title-color);
+    margin-bottom: 25px;
+}
+
+.resume_wrap{
+    background-color: #faf9ff;
+    margin-bottom: 25px;
+    padding: 40px 30px;
+    display: flex;
+    position: relative;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.resume_wrap_icon{
+    background-color: var(--main-color);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.resume_wrap_icon i{
+    font-size: 25px;
+    color: #fff;
+}
+
+.resume_wrap-content{
+    width: calc(100% - 100px);
+    padding: 0 0 10px 10px;
+}
+
+.resume_wrap .date{
+    font-weight: 600;
+}
+
+.resume_wrap-content h4{
+    font-size: 20px;
+    color: var(--title-color);
+}
+
+
+.resume_wrap-content .position{
+    font-size: 14px;
+    color:var(--subtitle-color);
+    font-weight: 400;
+
+}
+
+.resume_wrap-content p{
+    font-size: 14px;
+    color:var(--subtitle-color);
+   margin-top: 15px;
+    
+}
+
+.resume_wrap:hover{
+    color: #faf9ff;
+    background-color: var(--main-color);
+}
+
+
+.resume_wrap:hover .resume_wrap_icon{
+    color: var(--main-color);
+    background-color: #fff;
+}
+
+.resume_wrap:hover h4 ,
+.resume_wrap:hover span,
+.resume_wrap:hover p{
+    color: #fff;
+}
