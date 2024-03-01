@@ -146,7 +146,7 @@ ul{
     z-index: 1000;
 }
 
-header .active{
+header.active{
     background-color: #fff;
     box-shadow: 0 5px 10px rgba(0,0,0,.15);
 }
@@ -378,3 +378,7 @@ header .container{
     }
 
 }
+
+
+
+
