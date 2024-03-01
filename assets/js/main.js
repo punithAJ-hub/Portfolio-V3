@@ -41,6 +41,6 @@ if(typed){
         loop:true,
         typeSpeed : 100,
         backSpeed:50,
-        backDelay:200
+        backDelay:2000
     })
 }
