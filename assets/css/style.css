@@ -461,7 +461,7 @@ header .container{
 }
 
 .resume_tabs ul{
-    position: static;
+    position: sticky;
     top: 150px;
    position: -webkit-sticky;
 }
@@ -498,6 +498,7 @@ header .container{
 
 
 .page_heading{
+    font-weight: 600;
     font-size: 25px;
     color: var(--title-color);
     margin-bottom: 25px;
@@ -572,3 +573,219 @@ header .container{
 .resume_wrap:hover p{
     color: #fff;
 }
+
+
+ /* ======= Skills page ==========  */
+
+ .progressBoxes{
+    gap: 3rem;
+ }
+
+ .progress_name{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    color: var(--title-color);
+    margin-bottom: 10px;
+ }
+
+ .progress{
+    width: 100%;
+    height: 7px;
+    border-radius: 10px;
+    background-origin: var(--seconde-color);
+    box-shadow: 0 5px 20px rgba(0,0,0,.1);
+ }
+
+ .progress_bar{
+    height: 100%;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    position: relative;
+ }
+
+ .progress_bar::after{
+    content: '';
+    position:absolute;
+    top: 50%;
+    left: calc(100% - 7px);
+    transform: translateY(-50%);
+    height: 15px;
+    width: 15px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+ }
+
+ @media screen and (max-width:992px) {
+
+    .resume_container{
+        grid-template-columns: 1fr;
+    }
+
+    .resume_tabs{
+        display: none;
+    }
+
+    .resume_wrap{
+        padding: 20px 50px;
+    }
+    
+ }
+
+ @media screen and (max-width:576px) {
+
+    
+    .resume_wrap{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .resume_wrap .resume_wrap_icon{
+        margin-bottom: 15px;
+    }
+    
+    .resume_wrap-content{
+        width: 100%;
+    }
+
+    .progressBoxes{
+        grid-template-columns: 1fr;
+    }
+
+ }
+
+
+ /* ============= Portfolio Section=============  */
+
+ .portfolio_filters{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+ }
+
+ .portfolio_filters li{
+    font-size: 15px;
+    padding: 5px 15px ;
+    cursor: pointer;
+ }
+
+ .portfolio_filters li:hover , .filter-active{
+    background-color:var(--main-color) ;
+    color: #fff;
+    border-radius: 50px;
+ }
+
+ .portfolio_wrap_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    position: relative;
+ }
+
+ .portfolio_item{
+    border-radius: 10px;
+ }
+
+ .portfolio_wrap{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+ }
+
+ .portfolio_wrap img{
+    border-radius: 10px;
+ }
+
+ .portfolio_wrap::before{
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border-top: 3px solid rgba(0,0,0,.5);
+    border-left:3px solid rgba(0,0,0,.5) ;
+    transition: .4s;
+    transform: scale(0);
+ }
+ .portfolio_wrap::after{
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border-bottom: 3px solid rgba(0,0,0,.5);
+    border-right:3px solid rgba(0,0,0,.5) ;
+    transition: .4s;
+    transform: scale(0);
+ }
+
+ .portfolio_wrap:hover::before, .portfolio_wrap:hover::after{
+    transform: scale(1);
+
+ }
+
+ .portfolio_info{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: .4s;
+    transform: scale(0);
+    color: rgb(0, 0, 0);
+ }
+
+
+ .portfolio_wrap:hover  .portfolio_info{
+    transform: scale(1);
+ }
+
+ .portfolio-img{
+    width: 100%;
+    height: 250px;
+ }
+
+ .portfolio_info h4{
+    font-size: 24px;
+    color: #333;
+    font-weight: 500;
+ }
+
+ .portfolio_info p{
+    text-transform: uppercase;
+ }
+
+ .portfolio_links a {
+    font-size: 28px;
+    color: #333;
+ }
+
+
+ @media screen and (max-width: 992px) {
+    .portfolio_wrap_container{
+        grid-template-columns: repeat(2,1fr);
+    }
+ }
+
+ @media screen and (max-width: 576px) {
+    .portfolio_wrap_container{
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio_filters li{
+        font-size: 16px;
+    }
+ }
