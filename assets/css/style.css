@@ -81,6 +81,7 @@ ul{
     font-size: 16px ;
     border-radius: 10px;
     transition: .4s;
+   
 
 }
 
@@ -163,7 +164,7 @@ header .container{
     left: 10%;
 }
 .logo{
-    width:150px ;
+    width:200px ;
     height: auto;
     
     
@@ -393,6 +394,7 @@ header .container{
 .about_content p{
     color: #333;
     margin: 20px 0 15px;
+    text-align: justify;
 }
 
 .about_info{
@@ -553,7 +555,8 @@ header .container{
 .resume_wrap-content p{
     font-size: 14px;
     color:var(--subtitle-color);
-   margin-top: 15px;
+    margin-top: 15px;
+    text-align: justify;
     
 }
 
@@ -615,6 +618,8 @@ header .container{
     background-color: var(--main-color);
     border-radius: 50%;
  }
+
+ 
 
  @media screen and (max-width:992px) {
 
@@ -707,8 +712,8 @@ header .container{
     width: 40px;
     height: 40px;
     background-color: transparent;
-    border-top: 3px solid rgba(0,0,0,.5);
-    border-left:3px solid rgba(0,0,0,.5) ;
+    border-top: 3px solid rgba(0,0,0,.8);
+    border-left:3px solid rgba(0,0,0,.8) ;
     transition: .4s;
     transform: scale(0);
  }
@@ -720,8 +725,8 @@ header .container{
     width: 40px;
     height: 40px;
     background-color: transparent;
-    border-bottom: 3px solid rgba(0,0,0,.5);
-    border-right:3px solid rgba(0,0,0,.5) ;
+    border-bottom: 3px solid rgba(0,0,0,.8);
+    border-right:3px solid rgba(0,0,0,.8) ;
     transition: .4s;
     transform: scale(0);
  }
@@ -756,12 +761,14 @@ header .container{
  .portfolio-img{
     width: 100%;
     height: 250px;
+    filter: grayscale(.4);
  }
 
  .portfolio_info h4{
     font-size: 24px;
-    color: #333;
+    color: rgb(0, 0, 0);
     font-weight: 500;
+    text-align: center;
  }
 
  .portfolio_info p{
@@ -772,6 +779,9 @@ header .container{
     font-size: 28px;
     color: #333;
  }
+
+
+
 
 
  @media screen and (max-width: 992px) {
@@ -789,3 +799,160 @@ header .container{
         font-size: 16px;
     }
  }
+
+
+ .disbale_portfolio{
+    transform: scale(0);
+ }
+
+
+ /* ========= Testimonials section ========= */
+
+ .testimonial_item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-attachment: #fff;
+    padding: 30px;
+    user-select: none;
+ }
+
+
+
+ .img_name{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .img_name img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+ }
+
+ .img_name  .name{
+    font-weight: 600;
+
+ }
+
+ .post{
+    color: #777;
+ }
+
+
+
+
+
+
+ /* ========== Contact Section ======= */
+
+ .contact{
+    padding-bottom: 60px;
+ }
+
+ .contact_container{
+    display: flex;
+    justify-content: center;
+ }
+ .contact_content{
+    min-width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+ }
+
+ .inputs{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+ }
+
+ input{
+    margin-bottom: 30px;
+ }
+
+ input, textarea{
+    border-radius: 10px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background-color:#ecf1fa;
+    color: var(--title-color);
+    font-size: 16px;
+
+ }
+
+ input:focus, textarea:focus{
+    box-shadow: 0 0 5px #4069ba;
+ }
+
+ .contact_content .btn{
+    width: 185px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+ }
+
+
+ @media screen and (max-widh:576px) {
+    .contact_content{
+        padding: 0;
+    }
+    .inputs{
+        flex-direction: column;
+    }
+ }
+
+
+
+ /* =========== footer ========== */
+
+ .footer_bg{
+    background-color: var(--main-color);
+    padding-top: 30px;
+
+ }
+
+ .footer_container{
+   text-align: center;
+ }
+
+ .main_footer{
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(219,219,219);
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    color: #fff;
+    align-items: center;
+ }
+
+ .footer_social{
+    display: flex;
+    column-gap: 20px;
+}
+
+.footer_social a{
+    font-size: 22px;
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    color: #333;
+    transform: .3s;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+
+.footer_social a:hover{
+    color:var(--main-color);
+    box-shadow: 0 0 10px var(--main-color);
+}

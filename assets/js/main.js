@@ -99,3 +99,45 @@ function resumeActive(){
 }
 
 window.addEventListener('scroll' , resumeActive);
+
+
+/* Portfolio Categories */
+
+
+let filterItems = document.querySelectorAll('.portfolio_filters li');
+
+
+function activePortfolio(){
+    filterItems.forEach(e1=>{
+        
+        e1.classList.remove('filter-active');
+        this.classList.add('filter-active');
+
+    });
+}
+
+filterItems.forEach(e1=>{
+    e1.addEventListener('click', activePortfolio);
+})
+
+
+/* Mixit up filter portfolio */
+
+let mixerPortfolio = mixitup('.portfolio_wrap_container',{
+    selectors:{
+        target:'.portfolio_item'
+    },
+    animation:{
+        duration:300
+    }
+})
+
+
+/* Testimonial Swiper */
+
+let swiper = new Swiper(".testimonial_container", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+});
