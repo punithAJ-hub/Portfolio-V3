@@ -273,7 +273,7 @@ header .container{
 /* ============= Hero Section=============  */
 
 .hero{
-    padding-top: 114px;
+    padding-top: 150px;
     position: relative;
     display: block;
 }
@@ -283,6 +283,7 @@ header .container{
 }
 .hero_container{
     align-items: center;
+
 }
 
 .hero_container h4{
