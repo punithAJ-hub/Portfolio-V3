@@ -143,14 +143,6 @@ let swiper = new Swiper(".testimonial_container", {
 });
 
 
-
-function sendEmail(request , response){
-    // API KEY = e3542b580d80d40932265f78eb08be25
-    // Secret Key = 4f569332bb7b1a31f2e9c9c2dac1675d
-
-    
-}
-
 function prewriteInfo(name , email){
     document.getElementById('message').innerHTML = `Hello Punith,\n\nMy name is ${name}. I would like to get in touch with you. Please reach out to me at ${email}.\n\nRegards,\n${name}`;
 }
@@ -164,48 +156,40 @@ document.getElementById('message').addEventListener('focus' ,()=>{
 })
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('emailForm');
-    
-      form.addEventListener('submit', function(event) {
-      event.preventDefault(); 
+document.getElementById("message").addEventListener("focus", () => {
+    const form = document.getElementById("emailForm");
+    const formData = new FormData(form);
+    const name = formData.get("name");
+    const email = formData.get("email");
+    prewriteInfo(name, email);
+  });
   
-      const formData = new FormData(this); 
-      const name = formData.get('name');
-      const email = formData.get('email');
-      const message = formData.get('message');
-      
-      console.log('Username:', name, 'email:', email); 
-
-      window.open('mailto:ajpunith5@gmail.com?subject=Get In Touch&body='+message);
-
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("emailForm");
+    emailjs.init("ANic9u0dEvw9HJilP");
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+  
+      const formData = new FormData(this);
+      var params = {
+        name: formData.get("name"),
+        email: formData.get("email"),
+        message: formData.get("message"),
+      };
+      const serviceId = "service_kgkk5db";
+      const templateId = "template_mnaxuqp";
+  
+      emailjs
+        .send(serviceId, templateId, params)
+        .then(() => {
+          document.querySelector(".successMessage").innerHTML =
+            "Thank you for your email. I will get back to you ASAP.";
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+  
       form.reset();
-      
-      })
     });
-     
-//         const myHeaders = new Headers();
-//         myHeaders.append('Content-Type','application/json');
-//         myHeaders.set('Authorization' , 'Basic' + btoa('e3542b580d80d40932265f78eb08be25'+':'+'4f569332bb7b1a31f2e9c9c2dac1675d'));
-//         const data = JSON.stringify({
-//             "Messages": [{
-//             "From": {"Email": email},
-//             "To": [{"Email": "ajpunith5@gmail.com"}],
-//             "Subject": "Hello There, From my Portfolio",
-//             "TextPart": message
-//             }]
-//         });
-
-//         const requestOptions = {
-//             method: 'POST',
-//             headers: myHeaders,
-//             body: data,
-//           };
-        
-//           fetch("https://api.mailjet.com/v3.1/send", requestOptions)
-//             .then(response => response.text())
-//             .then(result => console.log(result))
-//             .catch(error => console.log('error', error));
-      
-//     });
-//   });
+  });
+  

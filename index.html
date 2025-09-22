@@ -1,505 +1,762 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Punith A J Portfolio</title>
 
     <!-- main css file -->
-   <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-   <!-- Box Icons
+    <!-- Box Icons
    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
  -->
 
- <!--Swiper js-->
- <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+    <!--Swiper js-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-R78B0ZRL0S"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-
-</head>
-<body>
+      gtag("config", "G-R78B0ZRL0S");
+    </script>
+  </head>
+  <body>
     <!--======= Header =============-->
     <header id="header">
-        <div class="container">
-            <a href="#" class="logo">
-                <img src="./assets/images/logo-svg.svg" alt="" id="img_logo" class="img-fluid">
-            </a>
-            <ul class="menu">
-                <li class="menu_item">
-                    <a href="#hero" class="menu_link">Home</a>
-                </li>
-                <li class="menu_item">
-                    <a href="#about" class="menu_link">About</a>
-                </li>
-                <li class="menu_item">
-                    <a href="#resume" class="menu_link">Resume</a>
-                </li>
-                <li class="menu_item">
-                    <a href="#portfolio" class="menu_link">Portfolio</a>
-                </li>
-                <!-- <li class="menu_item">
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="./assets/images/logo-svg.svg"
+            alt=""
+            id="img_logo"
+            class="img-fluid"
+          />
+        </a>
+        <ul class="menu">
+          <li class="menu_item">
+            <a href="#hero" class="menu_link">Home</a>
+          </li>
+          <li class="menu_item">
+            <a href="#about" class="menu_link">About</a>
+          </li>
+          <li class="menu_item">
+            <a href="#resume" class="menu_link">Resume</a>
+          </li>
+          <li class="menu_item">
+            <a href="#portfolio" class="menu_link">Portfolio</a>
+          </li>
+          <!-- <li class="menu_item">
                     <a href="#services" class="menu_link">Services</a>
                 </li> -->
-                <li class="menu_item">
-                    <a href="#contact" class="menu_link">Contact</a>
-                </li>
-                <ion-icon name="close-outline" class="close_icon"></ion-icon>
-                
-            </ul>
-            <ion-icon name="menu-outline" class="toggle_icon"></ion-icon>
-        </div>
+          <li class="menu_item">
+            <a href="#contact" class="menu_link">Contact</a>
+          </li>
+          <ion-icon name="close-outline" class="close_icon"></ion-icon>
+        </ul>
+        <ion-icon name="menu-outline" class="toggle_icon"></ion-icon>
+      </div>
     </header>
 
-
     <main>
-        <!--======= Hero Section =============-->
-        <section class="hero section" id="hero">
-            <div class="hero_container container grid">
-                <div class="hero_content">
-                    <h4>Hi There,</h4>
-                    <h1>I'm a
-                        <span class="typed" data-typed-items="Sofware Engineer, Developer"></span>
-                    </h1>
-                    <p>
-                        I'm an Engineer based in Detroit, and I'm very passionate and dedicated to my work. 
-                    </p>
-                    <div class="hero_social">
-                        <a href="#"><ion-icon name="logo-dribbble"></ion-icon></a>
-                        <a href="https://www.linkedin.com/in/punith-agraharavalagerahalli-jayaramu-9b1538161/"><ion-icon name="logo-linkedin"></ion-icon></a>
-                        <a href="https://github.com/punithAJ-hub"><ion-icon name="logo-github"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-                    </div>
-                    <a href="#contact" class="btn">
-                        Read More
-                        <ion-icon name="chevron-forward-outline"></ion-icon>
-                    </a>
-                </div>
-                <div class="hero_img">
-                    <img src="./assets/images/Subject.png" alt="" class="image-fluid">
-                </div>
+      <!--======= Hero Section =============-->
+      <section class="hero section" id="hero">
+        <div class="hero_container container grid">
+          <div class="hero_content">
+            <h4>Hi There,</h4>
+            <h1>
+              I'm a
+              <span
+                class="typed"
+                data-typed-items="Sofware Engineer, Developer"
+              ></span>
+            </h1>
+            <p>
+              Based in Detroit, driven by a profound passion for coding and
+              dedicated to crafting innovative solutions.
+            </p>
+            <div class="hero_social">
+              <a href="#"><ion-icon name="logo-dribbble"></ion-icon></a>
+              <a
+                href="https://www.linkedin.com/in/punith-agraharavalagerahalli-jayaramu-9b1538161/"
+                ><ion-icon name="logo-linkedin"></ion-icon
+              ></a>
+              <a href="https://github.com/punithAJ-hub"
+                ><ion-icon name="logo-github"></ion-icon
+              ></a>
+              <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
             </div>
-        </section>
+            <a href="#contact" class="btn">
+              Read More
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+          </div>
+          <div class="hero_img">
+            <img
+              src="./assets/images/heroImage1.png"
+              alt=""
+              class="image-fluid"
+            />
+          </div>
+        </div>
+      </section>
 
-        <!--======= About Section =============-->
-        <section class="about section" id="about">
-            <h2 class="section_title">About Me</h2>
-            <div class="about_container container grid">
-                <div class="about_img">
-                    <img src="./assets/images/aboutMe Image.webp" alt="">
-                </div>
-                <div class="about_content">
-                    <h1>I am a Graduate Student and a Software Developer</h1>
-                    <p>Driven by an intrinsic passion for problem-solving and innovation in technology, I dedicate myself to developing software that not only meets functional requirements but also elevates user experience. Each line of code I write is a step towards a future where technology serves to enhance our capabilities and enrich our interactions.</p>
-                    <div class="about_info">
-                        <div>
-                            <span class="number">2+</span>
-                            <br>
-                            <span class="text">Years<br> experience</span>
-                        </div>
-                        <div>
-                            <span class="number">120</span>
-                            <br>
-                            <span class="text">Positive <br> review's</span>
-                        </div>
-                    </div>
-                </div>
+      <!--======= About Section =============-->
+      <section class="about section" id="about">
+        <h2 class="section_title">About Me</h2>
+        <div class="about_container container grid">
+          <div class="about_img">
+            <img src="./assets/images/heroImage2.png" alt="" />
+          </div>
+          <div class="about_content">
+            <h1>I am a Graduate Student and a Software Developer</h1>
+            <p>
+              Driven by an intrinsic passion for problem-solving and innovation
+              in technology, I dedicate myself to developing software that not
+              only meets functional requirements but also elevates user
+              experience. Each line of code I write is a step towards a future
+              where technology serves to enhance our capabilities and enrich our
+              interactions.
+            </p>
+            <div class="about_info">
+              <div>
+                <span class="number">2+</span>
+                <br />
+                <span class="text"
+                  >Years<br />
+                  experience</span
+                >
+              </div>
+              <div>
+                <span class="number">120</span>
+                <br />
+                <span class="text"
+                  >Positive <br />
+                  review's</span
+                >
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
+      <!--======= Resume Section =============-->
+      <section class="resume section" id="resume">
+        <h2 class="section_title">Resume</h2>
 
-        <!--======= Resume Section =============-->
-        <section class="resume section" id="resume">
-            <h2 class="section_title">Resume</h2>
-
-            <div class="resume_container container grid">
-                <div class="resume_tabs">
-                    <ul>
-                        <li>
-                            <a href="#page-1" class="current">Education</a>
-                        </li>
-                        <li>
-                            <a href="#page-2"  >Experience</a>
-                        </li>
-                        <li>
-                            <a href="#page-3"  >Skills</a>
-                        </li>
-                        <li>
-                            <a href="#page-4"  >Awards</a>
-                        </li>
-                    </ul>
+        <div class="resume_container container grid">
+          <div class="resume_tabs">
+            <ul>
+              <li>
+                <a href="#page-1" class="current">Education</a>
+              </li>
+              <li>
+                <a href="#page-2">Experience</a>
+              </li>
+              <li>
+                <a href="#page-3">Skills</a>
+              </li>
+              <li>
+                <a href="#page-4">Awards</a>
+              </li>
+            </ul>
+          </div>
+          <div class="resume_content">
+            <div class="page one" id="page-1">
+              <div class="page_heading">Education</div>
+              <div class="resume_wrap">
+                <div class="resume_wrap_icon">
+                  <ion-icon name="school-outline"></ion-icon>
                 </div>
-                <div class="resume_content">
-                    <div class="page one" id="page-1">
-                        <div class="page_heading">Education</div>
-                        <div class="resume_wrap">
-                            <div class="resume_wrap_icon">
-                                <ion-icon name="school-outline"></ion-icon>
-                            </div>
-                            <div class="resume_wrap-content">
-                                <span class="date">2023-2024</span>
-                                <h4>Master's in Computer Science</h4>
-                                <span class="position"> Wayne State University</span>
-                                <p>Currently pursuing a Master's degree in Computer Science, I am expanding my expertise in areas such as machine learning, data structures, and software development. This advanced education is equipping me with the latest in algorithmic innovation and coding proficiency, preparing me to tackle complex challenges in the tech industry</p>
-                            </div>
-                        </div>
-                        
-                        <div class="resume_wrap">
-                            <div class="resume_wrap_icon">
-                                <ion-icon name="school-outline"></ion-icon>
-                            </div>
-                            <div class="resume_wrap-content">
-                                <span class="date">2016-2020</span>
-                                <h4>Bachelor of Engineering</h4>
-                                <span class="position"> Dr. Ambedkar Institute of Technology</span>
-                                <p>During my undergraduate studies in Engineering, I developed a solid foundation in problem-solving, analytical skills, and hands-on experience in software design. My coursework and projects have provided me with a deep understanding of core principles in engineering and technology, laying the groundwork for my ongoing professional growth.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="page two" id="page-2">
-                        <div class="page_heading">Experience</div>
-                        <div class="resume_wrap">
-                            <div class="resume_wrap_icon">
-                                <ion-icon name="briefcase-outline"></ion-icon>
-                            </div>
-                            <div class="resume_wrap-content">
-                                <span class="date">2021-2023</span>
-                                <h4>Senior Systems Engineer</h4>
-                                <span class="position"> Infosys Limited</span>
-                                <p>
-                                    - Collaborated on backend services with the American Express Team, using Java, Spring Boot, Maven, and MySQL and contributing to efficient financial backend services by following Agile Methodology and agile software development.  <br>
-                                    - Created events for card member selection, successfully executing a targeted system aligned with business requirements and showcasing it to clients. <br>
-                                    - Tested developed features using unit test frameworks on environments to ensure application robustness, scalability, and reliability also performed integration testing and worked on test automation. <br>
-                                    - Enhanced query processing, achieving a 0.5s reduction in time consumption per 1000 records, and successfully deployed the optimization in the production environment.
-                                    - Defined test cases based on the requirements and specifications and took part in reviews of my work.</p>
-                            </div>
-                        </div>
-                        <div class="resume_wrap">
-                            <div class="resume_wrap_icon">
-                                <ion-icon name="briefcase-outline"></ion-icon>
-                            </div>
-                            <div class="resume_wrap-content">
-                                <span class="date">Aug 2020- Dec 2020</span>
-                                <h4>Frontend Developer Intern</h4>
-                                <span class="position"> TechCentrix</span>
-                                <p>
-                                    - Translated business requirements into functional designs, creating essential documentation such as Data flow diagrams, User stories, Process Guides, Training material, Test Scripts, and User Manuals. <br>
-                                    - Participated in code reviews, contributed to team discussions on best practices, and assisted in the development of new features and functionality for web applications. <br>
-                                    - Optimized website speed and performance through code optimization, image compression, and proficient use of custom JavaScript scripts. <br>
-                                    - Demonstrated expertise in Agile development methodologies, working collaboratively in cross-functional teams to achieve project goals. <br>
-                                    - Coordinated and conducted "show and tell" sessions for ongoing projects, fostering collaboration and understanding among operations and client teams. <br>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="page three" id="page-3">
-                        <div class="page_heading">Skills</div>
-                            <div class="progressBoxes grid">
-                                <div class="progressBox">
-                                    <div class="progress_name">
-                                        <span>HTML</span>
-                                        <span>90%</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress_bar" style="width: 90%;">
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="progressBox">
-                                    <div class="progress_name">
-                                        <span>CSS</span>
-                                        <span>80%</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress_bar" style="width: 80%;">
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="progressBox">
-                                    <div class="progress_name">
-                                        <span>Javascript</span>
-                                        <span>70%</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress_bar" style="width: 70%;">
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="progressBox">
-                                    <div class="progress_name">
-                                        <span>React</span>
-                                        <span>70%</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress_bar" style="width: 70%;">
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="progressBox">
-                                    <div class="progress_name">
-                                        <span>Java</span>
-                                        <span>90%</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress_bar" style="width: 90%;">
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="progressBox">
-                                    <div class="progress_name">
-                                        <span>Python</span>
-                                        <span>80%</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress_bar" style="width: 80%;">
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="progressBox">
-                                    <div class="progress_name">
-                                        <span>SpringBoot</span>
-                                        <span>90%</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress_bar" style="width: 90%;">
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="progressBox">
-                                    <div class="progress_name">
-                                        <span>MySQL</span>
-                                        <span>90%</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress_bar" style="width: 90%;">
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="page four" id="page-4">
-                        <div class="page_heading">Achievements / Awards</div>
-                        <div class="resume_wrap">
-                            <div class="resume_wrap_icon">
-                                <ion-icon name="trophy-outline"></ion-icon>
-                            </div>
-                            <div class="resume_wrap-content">
-                                <span class="date">2021-2023</span>
-                                <h4>Insta Award</h4>
-                                <span class="position"> Infosys Limited</span>
-                                <p>I have been recognized as the Best Contributor for a pivotal client project, an accolade that underscores my dedication to delivering exceptional value and innovation in every endeavor.</p>
-                            </div>
-                        </div>
-                        <div class="resume_wrap">
-                            <div class="resume_wrap_icon">
-                                <ion-icon name="trophy-outline"></ion-icon>
-                            </div>
-                            <div class="resume_wrap-content">
-                                <span class="date">Aug 2020- Dec 2020</span>
-                                <h4>Infosys Certified Java and SpringBoot Developer</h4>
-                                <span class="position"> Infosys Limited</span>
-                                <p>Attained certification as a Java and SpringBoot Developer with Infosys, refining my expertise in robust backend development and microservices architecture.</p>
-                            </div>
-                        </div>
-                        <div class="resume_wrap">
-                            <div class="resume_wrap_icon">
-                                <ion-icon name="trophy-outline"></ion-icon>
-                            </div>
-                            <div class="resume_wrap-content">
-                                <span class="date">Aug 2023 - </span>
-                                <h4>AWS Cloud Practitioner:  Cloud Quest</h4>
-                                <span class="position"> Amazon Web Services </span>
-                                <p>Gained practical skills in AWS services and architecture, enabling scalable and secure cloud solutions. 
-
-                                    Advanced knowledge in AWS deployment and management, supporting efficient cloud application development.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="resume_wrap-content">
+                  <span class="date">2023-2024</span>
+                  <h4>Master's in Computer Science</h4>
+                  <span class="position"> Wayne State University</span>
+                  <p>
+                    Currently pursuing a Master's degree in Computer Science, I
+                    am expanding my expertise in areas such as machine learning,
+                    data structures, and software development. This advanced
+                    education is equipping me with the latest in algorithmic
+                    innovation and coding proficiency, preparing me to tackle
+                    complex challenges in the tech industry
+                  </p>
                 </div>
-            </div>
-        </section>
+              </div>
 
-
-        <!--=========  Portfolio Section ========== -->
-        <section class="portfolio section" id="portfolio">
-            <h2 class="section_title">Portfolio</h2>
-            <div class="portfolio_container container">
-                <ul class="portfolio_filters">
-                    <li data-filter="*" class="filter-active">All</li>
-                    <li data-filter=".filter-card">Card</li>
-                    <li data-filter=".filter-app">App</li>
-                    <li data-filter=".filter-web">Web</li>
-                </ul>
-                <div class="portfolio_wrap_container">
-                    <div class="portfolio_item filter-web">
-                        <div class="portfolio_wrap">
-                            <img src="./assets/images/smart_gardener.jpeg" alt="" class="img-fluid portfolio-img">
-                            <div class="portfolio_info">
-                                <h4>Smart Gardening</h4>
-                                <p>web</p>
-                                <div class="portfolio_links">
-                                    <a href="" class="project-link" target="_blank"><box-icon name='link' color='#0800f9' ></box-icon></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio_item filter-app">
-                        <div class="portfolio_wrap">
-                            <img src="./assets/images/inventory_management.jpeg" alt="" class="img-fluid portfolio-img">
-                            <div class="portfolio_info">
-                                <h4>Inventory Management System</h4>
-                                <p>app</p>
-                                <div class="portfolio_links">
-                                    <a href="https://github.com/punithAJ-hub/Inventory_Management_System" target="_blank" class="project-link"><box-icon name='link' color='#0800f9' ></box-icon></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio_item filter-app">
-                        <div class="portfolio_wrap">
-                            <img src="./assets/images/timber_tender.jpeg" alt="" class="img-fluid portfolio-img">
-                            <div class="portfolio_info">
-                                <h4>Woodworks Wizard</h4>
-                                <p>app</p>
-                                <div class="portfolio_links">
-                                    <a href="https://github.com/punithAJ-hub/WoodWorks-Wizard" target="_blank"  class="project-link"><box-icon name='link' color='#0800f9' ></box-icon></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio_item filter-card">
-                        <div class="portfolio_wrap">
-                            <img src="./assets/images/todo-list.jpeg" alt="" class="img-fluid portfolio-img">
-                            <div class="portfolio_info">
-                                <h4>To-do List</h4>
-                                <p>Card</p>
-                                <div class="portfolio_links">
-                                    <a href="https://github.com/punithAJ-hub/Todo-List" target="_blank" class="project-link"><box-icon name='link' color='#0800f9' ></box-icon></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio_item filter-card">
-                        <div class="portfolio_wrap">
-                            <img src="./assets/images/simon_game.jpeg" alt="" class="img-fluid portfolio-img">
-                            <div class="portfolio_info">
-                                <h4>Simon Game</h4>
-                                <p>Card</p>
-                                <div class="portfolio_links">
-                                    <a href="https://punith-aj-simon-game.netlify.app/"><box-icon name='link' color='#0800f9' ></box-icon></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio_item filter-app">
-                        <div class="portfolio_wrap">
-                            <img src="" alt="" class="img-fluid">
-                            <div class="portfolio_info">
-                                <h4>App 3</h4>
-                                <p>app</p>
-                                <div class="portfolio_links">
-                                    <a href=""><ion-icon name="add-outline"></ion-icon></a>
-                                    <a href=""><ion-icon name="link-outline"></ion-icon></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              <div class="resume_wrap">
+                <div class="resume_wrap_icon">
+                  <ion-icon name="school-outline"></ion-icon>
                 </div>
-               
-              
-            </div>
-        </section>
-
-        <!--========= Testimonial Section ========== -->
-        <section class="testimonial section">
-            <h2 class="section_title">Testimonials</h2>
-
-
-        <div class="testimonial_container container swiper  ">
-                <div class="swiper-wrapper">
-                    <div class="testimonial_item swiper-slide">
-                        <box-icon name='quote-alt-left' type='solid' color='#ff7b00ea'  ></box-icon>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non labore a cumque vero officia quam eligendi omnis esse consequatur, dolores facere! Accusantium rerum repellat ratione.</p>
-                        <div class="img_name">
-                            <img src="./assets/images/hadiNasser.jpg" alt="">
-                            <span class="name">Hadi Nasser</span>
-                            <span class="post">Professor</span>
-                        </div>
-                    </div>
-                    <div class="testimonial_item swiper-slide">
-                        <box-icon type='solid' name='quote-alt-left' color='#ff7b00ea'  class="testimonial_icon"></box-icon>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non labore a cumque vero officia quam eligendi omnis esse consequatur, dolores facere! Accusantium rerum repellat ratione.</p>
-                        <div class="img_name">
-                            <img src="./assets/images/prof.jpg" alt="">
-                            <span class="name">Hadi Nasser</span>
-                            <span class="post">Professor</span>
-                        </div>
-                    </div>
-                    <div class="testimonial_item swiper-slide">
-                        <box-icon type='solid' name='quote-alt-left' color='#ff7b00ea'></box-icon>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non labore a cumque vero officia quam eligendi omnis esse consequatur, dolores facere! Accusantium rerum repellat ratione.</p>
-                        <div class="img_name">
-                            <img src="./assets/images/prof.jpg" alt="">
-                            <span class="name">Hadi Nasser</span>
-                            <span class="post">Professor</span>
-                        </div>
-                    </div>
+                <div class="resume_wrap-content">
+                  <span class="date">2016-2020</span>
+                  <h4>Bachelor of Engineering</h4>
+                  <span class="position">
+                    Dr. Ambedkar Institute of Technology</span
+                  >
+                  <p>
+                    During my undergraduate studies in Engineering, I developed
+                    a solid foundation in problem-solving, analytical skills,
+                    and hands-on experience in software design. My coursework
+                    and projects have provided me with a deep understanding of
+                    core principles in engineering and technology, laying the
+                    groundwork for my ongoing professional growth.
+                  </p>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+              </div>
             </div>
-        </section>
-
-        <!--========= Contact Section ========== -->
-        <section class="contact section" id="contact">
-            <h2 class="section_title">Contact Me</h2>
-            <div class="contact_container container">
-                <form class="contact_content" id="emailForm">
-                    <div class="inputs">
-                        <input type="text" name="name" id="name" placeholder="Name" required>
-                        <input type="email" name="email" id="email" placeholder="Email" required>
-                    </div>
-                  <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                  <!-- <a href="#" class="btn">Send Message  -->
-                  <button type="submit" class="btn">Send Message</button>
-                </form>
-            </div>
-        </section>
-
-
-         <!--========= Footer ========== -->
-        <footer>
-            <div class="footer_bg">
-                <div class="footer_container container">
-                    <div class="main_footer">
-                        <div class="footer_social">
-                            <a href="#"><ion-icon name="logo-dribbble"></ion-icon></a>
-                            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
-                            <a href="#"><ion-icon name="logo-github"></ion-icon></a>
-                            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-                        </div>
-                        <h3>Punith A J</h3>
-                        <p>Lorem ipsum dolor sit amet consect, earum deserunt esse ipsa tempore distinctio, voluptatibus illum.</p>
-
-                    </div>
-                    <div class="footer_copy">&#169; Punith A J. All right reserved</div>
+            <div class="page two" id="page-2">
+              <div class="page_heading">Experience</div>
+              <div class="resume_wrap">
+                <div class="resume_wrap_icon">
+                  <ion-icon name="briefcase-outline"></ion-icon>
                 </div>
+                <div class="resume_wrap-content">
+                  <span class="date">May 2025 - Present</span>
+                  <h4>Software Engineer Intern</h4>
+                  <span class="position"> Rocket Mortgage</span>
+                  <p>
+                    - Built and optimized responsive user interfaces with
+                    React.js, TypeScript, and Redux, enabling underwriters to
+                    dynamically configure loan product settings, improving
+                    usability and team efficiency. <br />
+                    - Integrated Amplitude into frontend applications to capture
+                    user interactions and session flows, helping identify issues
+                    faster and generate actionable insights for enhancing the
+                    customer journey. <br />
+                    - Collaborated with backend engineers to connect RESTful
+                    APIs and display real-time product eligibility results in
+                    the UI, ensuring accurate and interactive loan
+                    recommendations. <br />
+                    - Rebuilt parts of the cloud-connected frontend architecture
+                    for data retention workflows, streamlining user-facing
+                    dashboards and improving responsiveness during high-traffic
+                    operations. <br />
+                    - Migrated a legacy configuration tool into a modern
+                    React-based application, simplifying workflows for managing
+                    default loan product eligibility and reducing manual setup.
+                    <br />
+                    - Enhanced frontend performance by optimizing API calls,
+                    caching strategies, and state management, reducing page load
+                    times and improving the overall customer experience. <br />
+                    - Implemented role-based access controls (RBAC) within the
+                    frontend to align with Spring Security and OAuth2, ensuring
+                    secure and compliant user authentication across
+                    applications. <br />
+                    - Maintained high code quality by writing unit and
+                    integration tests with Jest, React Testing Library, and
+                    Cypress, ensuring early detection of bugs and consistent UI
+                    behavior across features. <br />
+                    - Contributed to cloud-native deployment workflows by
+                    integrating frontend builds with AWS (S3, CloudFront, ECS)
+                    and automating deployments through Jenkins and GitHub
+                    Actions, reducing manual intervention.
+                  </p>
+                </div>
+              </div>
+              <div class="resume_wrap">
+                <div class="resume_wrap_icon">
+                  <ion-icon name="briefcase-outline"></ion-icon>
+                </div>
+                <div class="resume_wrap-content">
+                  <span class="date">May 2024 - Aug 2024</span>
+                  <h4>Software Engineer Intern</h4>
+                  <span class="position"> Rocket Mortgage</span>
+                  <p>
+                    - Contributed to decreasing the team's lead time by 20%
+                    through efficient task completion and streamlined
+                    development processes. <br />
+                    - Worked on 10+ engineering tasks to develop new features
+                    and actively participated in code reviews. Utilized
+                    Dynatrace and Splunk monitoring tools effectively to
+                    optimize code quality and performance across various
+                    projects. <br />
+                    - Improved testing and debugging capabilities by developing
+                    15+ comprehensive test cases and actively participating in
+                    5+ testing sessions.
+                  </p>
+                </div>
+              </div>
+              <div class="resume_wrap">
+                <div class="resume_wrap_icon">
+                  <ion-icon name="briefcase-outline"></ion-icon>
+                </div>
+                <div class="resume_wrap-content">
+                  <span class="date">Jan 2021 - Jan 2023</span>
+                  <h4>Senior Systems Engineer</h4>
+                  <span class="position"> Infosys Limited</span>
+                  <p>
+                    - Designed and implemented event-driven React components for
+                    card member selection, building dynamic, real-time
+                    interfaces that aligned with business requirements and
+                    delivered instant results to clients. <br />
+                    - Improved UI responsiveness by 30% by leveraging React
+                    hooks, asynchronous state management, and web workers for
+                    heavy data parsing and scheduling, reducing page latency and
+                    enhancing user experience. <br />
+                    - Developed intuitive dashboards and interfaces using
+                    React.js, TypeScript, and Material-UI/Ant Design,
+                    streamlining credit evaluation workflows and simplifying
+                    FICO score updates for end-users. <br />
+                    - Utilized React state management (Redux & Context API) to
+                    efficiently pipeline and transform large datasets on the
+                    client side, applying complex filters, aggregations, and
+                    visualizations that boosted data handling speed by 35%.
+                    <br />
+                    - Partnered with stakeholders and backend teams to translate
+                    business needs into frontend features, ensuring accurate
+                    credit transfer workflows and compliance-driven UI
+                    validation. <br />
+                    - Modernized legacy SOAP-based UIs by integrating with
+                    RESTful APIs through Axios and Fetch in React, improving
+                    system interoperability and reducing API overhead. <br />
+                    - Built interactive reporting dashboards in React,
+                    integrating with Spring Boot APIs and charting libraries
+                    like D3.js/Recharts, to provide real-time credit evaluation
+                    insights and strengthen client-facing reporting
+                    capabilities. <br />
+                    - Optimized frontend database interactions by implementing
+                    lazy loading, query batching, and caching strategies,
+                    reducing redundant calls and improving rendering speed in
+                    high-traffic environments.
+                  </p>
+                </div>
+              </div>
+              <div class="resume_wrap">
+                <div class="resume_wrap_icon">
+                  <ion-icon name="briefcase-outline"></ion-icon>
+                </div>
+                <div class="resume_wrap-content">
+                  <span class="date">Aug 2020- Dec 2020</span>
+                  <h4>Frontend Developer Intern</h4>
+                  <span class="position"> TechCentrix</span>
+                  <p>
+                    - Translated business requirements into functional designs,
+                    creating essential documentation such as Data flow diagrams,
+                    User stories, Process Guides, Training material, Test
+                    Scripts, and User Manuals. <br />
+                    - Participated in code reviews, contributed to team
+                    discussions on best practices, and assisted in the
+                    development of new features and functionality for web
+                    applications. <br />
+                    - Optimized website speed and performance through code
+                    optimization, image compression, and proficient use of
+                    custom JavaScript scripts. <br />
+                    - Demonstrated expertise in Agile development methodologies,
+                    working collaboratively in cross-functional teams to achieve
+                    project goals. <br />
+                    - Coordinated and conducted "show and tell" sessions for
+                    ongoing projects, fostering collaboration and understanding
+                    among operations and client teams. <br />
+                  </p>
+                </div>
+              </div>
             </div>
-        </footer>
+            <div class="page three" id="page-3">
+              <div class="page_heading">Skills</div>
+              <div class="progressBoxes grid">
+                <div class="progressBox">
+                  <div class="progress_name">
+                    <span>HTML</span>
+                    <span>90%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress_bar" style="width: 90%"></div>
+                  </div>
+                </div>
+                <div class="progressBox">
+                  <div class="progress_name">
+                    <span>CSS</span>
+                    <span>80%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress_bar" style="width: 80%"></div>
+                  </div>
+                </div>
+                <div class="progressBox">
+                  <div class="progress_name">
+                    <span>Javascript</span>
+                    <span>70%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress_bar" style="width: 70%"></div>
+                  </div>
+                </div>
+                <div class="progressBox">
+                  <div class="progress_name">
+                    <span>React</span>
+                    <span>70%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress_bar" style="width: 70%"></div>
+                  </div>
+                </div>
+                <div class="progressBox">
+                  <div class="progress_name">
+                    <span>Java</span>
+                    <span>90%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress_bar" style="width: 90%"></div>
+                  </div>
+                </div>
+                <div class="progressBox">
+                  <div class="progress_name">
+                    <span>Python</span>
+                    <span>80%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress_bar" style="width: 80%"></div>
+                  </div>
+                </div>
+                <div class="progressBox">
+                  <div class="progress_name">
+                    <span>SpringBoot</span>
+                    <span>90%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress_bar" style="width: 90%"></div>
+                  </div>
+                </div>
+                <div class="progressBox">
+                  <div class="progress_name">
+                    <span>MySQL</span>
+                    <span>90%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress_bar" style="width: 90%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="page four" id="page-4">
+              <div class="page_heading">Achievements / Awards</div>
+              <div class="resume_wrap">
+                <div class="resume_wrap_icon">
+                  <ion-icon name="trophy-outline"></ion-icon>
+                </div>
+                <div class="resume_wrap-content">
+                  <span class="date">2021-2023</span>
+                  <h4>Insta Award</h4>
+                  <span class="position"> Infosys Limited</span>
+                  <p>
+                    I have been recognized as the Best Contributor for a pivotal
+                    client project, an accolade that underscores my dedication
+                    to delivering exceptional value and innovation in every
+                    endeavor.
+                  </p>
+                </div>
+              </div>
+              <div class="resume_wrap">
+                <div class="resume_wrap_icon">
+                  <ion-icon name="trophy-outline"></ion-icon>
+                </div>
+                <div class="resume_wrap-content">
+                  <span class="date">Aug 2020- Dec 2020</span>
+                  <h4>Infosys Certified Java and SpringBoot Developer</h4>
+                  <span class="position"> Infosys Limited</span>
+                  <p>
+                    Attained certification as a Java and SpringBoot Developer
+                    with Infosys, refining my expertise in robust backend
+                    development and microservices architecture.
+                  </p>
+                </div>
+              </div>
+              <div class="resume_wrap">
+                <div class="resume_wrap_icon">
+                  <ion-icon name="trophy-outline"></ion-icon>
+                </div>
+                <div class="resume_wrap-content">
+                  <span class="date">Aug 2023 - </span>
+                  <h4>AWS Cloud Practitioner: Cloud Quest</h4>
+                  <span class="position"> Amazon Web Services </span>
+                  <p>
+                    Gained practical skills in AWS services and architecture,
+                    enabling scalable and secure cloud solutions. Advanced
+                    knowledge in AWS deployment and management, supporting
+                    efficient cloud application development.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!--=========  Portfolio Section ========== -->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section_title">Portfolio</h2>
+        <div class="portfolio_container container">
+          <ul class="portfolio_filters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-card">Card</li>
+            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-web">Web</li>
+          </ul>
+          <div class="portfolio_wrap_container">
+            <div class="portfolio_item filter-web">
+              <div class="portfolio_wrap">
+                <img
+                  src="./assets/images/smart_gardener.jpeg"
+                  alt=""
+                  class="img-fluid portfolio-img"
+                />
+                <div class="portfolio_info">
+                  <h4>Smart Gardening</h4>
+                  <p>web</p>
+                  <div class="portfolio_links">
+                    <a href="" class="project-link" target="_blank"
+                      ><box-icon name="link" color="#0800f9"></box-icon
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio_item filter-app">
+              <div class="portfolio_wrap">
+                <img
+                  src="./assets/images/inventory_management.jpeg"
+                  alt=""
+                  class="img-fluid portfolio-img"
+                />
+                <div class="portfolio_info">
+                  <h4>Inventory Management System</h4>
+                  <p>app</p>
+                  <div class="portfolio_links">
+                    <a
+                      href="https://github.com/punithAJ-hub/Inventory_Management_System"
+                      target="_blank"
+                      class="project-link"
+                      ><box-icon name="link" color="#0800f9"></box-icon
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio_item filter-app">
+              <div class="portfolio_wrap">
+                <img
+                  src="./assets/images/timber_tender.jpeg"
+                  alt=""
+                  class="img-fluid portfolio-img"
+                />
+                <div class="portfolio_info">
+                  <h4>Woodworks Wizard</h4>
+                  <p>app</p>
+                  <div class="portfolio_links">
+                    <a
+                      href="https://github.com/punithAJ-hub/WoodWorks-Wizard"
+                      target="_blank"
+                      class="project-link"
+                      ><box-icon name="link" color="#0800f9"></box-icon
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio_item filter-card">
+              <div class="portfolio_wrap">
+                <img
+                  src="./assets/images/todo-list.jpeg"
+                  alt=""
+                  class="img-fluid portfolio-img"
+                />
+                <div class="portfolio_info">
+                  <h4>To-do List</h4>
+                  <p>Card</p>
+                  <div class="portfolio_links">
+                    <a
+                      href="https://github.com/punithAJ-hub/Todo-List"
+                      target="_blank"
+                      class="project-link"
+                      ><box-icon name="link" color="#0800f9"></box-icon
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio_item filter-card">
+              <div class="portfolio_wrap">
+                <img
+                  src="./assets/images/simon_game.jpeg"
+                  alt=""
+                  class="img-fluid portfolio-img"
+                />
+                <div class="portfolio_info">
+                  <h4>Simon Game</h4>
+                  <p>Card</p>
+                  <div class="portfolio_links">
+                    <a href="https://punith-aj-simon-game.netlify.app/"
+                      ><box-icon name="link" color="#0800f9"></box-icon
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio_item filter-app">
+              <div class="portfolio_wrap">
+                <img src="" alt="" class="img-fluid" />
+                <div class="portfolio_info">
+                  <h4>App 3</h4>
+                  <p>app</p>
+                  <div class="portfolio_links">
+                    <a href=""><ion-icon name="add-outline"></ion-icon></a>
+                    <a href=""><ion-icon name="link-outline"></ion-icon></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!--========= Testimonial Section ========== -->
+      <section class="testimonial section">
+        <h2 class="section_title">Testimonials</h2>
+
+        <div class="testimonial_container container swiper">
+          <div class="swiper-wrapper">
+            <div class="testimonial_item swiper-slide">
+              <box-icon
+                name="quote-alt-left"
+                type="solid"
+                color="#ff7b00ea"
+              ></box-icon>
+              <p>
+                I have the pleasure of teaching Punith in my CSC-5750 Principles
+                of Web Technology in the Winter 2023 semester. Punith is very
+                organized and dependable. Not only that, but he has passion,
+                drive, and a deep optimism for what's possible. I'm observing
+                firsthand how he uses that optimism to inspire others in a team
+                working towards a common goal to deliver a project successtully.
+                I've also been impressed with Punith's growth in the web
+                technology field. Through my mentorship and guidance, he's
+                attaining new skills that can be an excellent asset to any group
+                looking to create functional and most importantly user friendly
+                applications.
+              </p>
+              <div class="img_name">
+                <img src="./assets/images/hadiNasser.jpg" alt="" />
+                <span class="name">Hadi Nasser</span>
+                <span class="post">Professor</span>
+              </div>
+            </div>
+            <div class="testimonial_item swiper-slide">
+              <box-icon
+                type="solid"
+                name="quote-alt-left"
+                color="#ff7b00ea"
+                class="testimonial_icon"
+              ></box-icon>
+              <p>
+                I have known Punith for over 1 year as his supervisor at Wayne
+                State University.There is no doubt in my mind that Punith will
+                be an excellent addition to your team. I have always known
+                Punith to be of sound character, being conscientious,
+                disciplined, optimistic, resilient, and having a great sense of
+                ambition. Over the course of the past year I have witnessed
+                tremendous growth in Punith's leadership skills,
+                self-management, teamwork, and problem solving. I am certain
+                that these cultivated skills will allow Punith to excel.
+              </p>
+              <div class="img_name">
+                <img src="./assets/images/john.jpeg" alt="" />
+                <span class="name">John Dembinski</span>
+                <span class="post">MPA @Wayne State University</span>
+              </div>
+            </div>
+            <!-- <div class="testimonial_item swiper-slide">
+              <box-icon
+                type="solid"
+                name="quote-alt-left"
+                color="#ff7b00ea"
+              ></box-icon>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                labore a cumque vero officia quam eligendi omnis esse
+                consequatur, dolores facere! Accusantium rerum repellat ratione.
+              </p>
+              <div class="img_name">
+                <img src="./assets/images/prof.jpg" alt="" />
+                <span class="name">Hadi Nasser</span>
+                <span class="post">Professor</span>
+              </div>
+            </div> -->
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+
+      <!--========= Contact Section ========== -->
+      <section class="contact section" id="contact">
+        <h2 class="section_title">Contact Me</h2>
+        <div class="contact_container container">
+          <form class="contact_content" id="emailForm">
+            <div class="inputs">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+            <!-- <a href="#" class="btn">Send Message  -->
+            <button type="submit" class="btn">Send Message</button>
+            <div>
+              <h5 class="successMessage"></h5>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!--========= Footer ========== -->
+      <footer>
+        <div class="footer_bg">
+          <div class="footer_container container">
+            <div class="main_footer">
+              <div class="footer_social">
+                <a href="#"><ion-icon name="logo-dribbble"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+              </div>
+              <h3>Punith A J</h3>
+              <p>
+                "The magic you are looking for is in the work you are avoiding".
+              </p>
+            </div>
+            <div class="footer_copy">&#169; Punith A J. All right reserved</div>
+          </div>
+        </div>
+      </footer>
     </main>
 
     <!--Swiper js-->
@@ -512,13 +769,23 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <!-- ionIcons -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
 
     <!-- Box icons-->
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
 
     <!--Main js script -->
     <script src="./assets/js/main.js"></script>
-</body>
+  </body>
 </html>

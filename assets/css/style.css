@@ -58,7 +58,7 @@ ul{
 }
 
 .img-fluid{
-    max-width: 100%;
+    max-width: 95%;
     height: auto;
 
 }
@@ -280,6 +280,7 @@ header .container{
 
 .hero_img img{
     height: 400px;
+    padding-right: 100px;
 }
 .hero_container{
     align-items: center;
@@ -352,6 +353,8 @@ header .container{
 
     .hero_content p{
         font-size: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
 }
@@ -414,7 +417,7 @@ header .container{
 }
 
 .about_img > img{
-    width: 400px;
+    width: 450px;
 }
 
 
@@ -446,6 +449,11 @@ header .container{
     .about_info{
         justify-content: center;
 
+    }
+
+    .about_content p{
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .about_info > div .text{
@@ -819,6 +827,10 @@ header .container{
     user-select: none;
  }
 
+ .testimonial_item p{
+    text-align: justify;
+    padding: 0 20px ;
+ }
 
 
  .img_name{
@@ -871,6 +883,7 @@ header .container{
     display: flex;
     justify-content: space-between;
     column-gap: 20px;
+    flex-direction: row;
  }
 
  input{
@@ -901,7 +914,7 @@ header .container{
  }
 
 
- @media screen and (max-widh:576px) {
+ @media screen and (max-width:576px) {
     .contact_content{
         padding: 0;
     }
@@ -960,4 +973,9 @@ header .container{
 
 #message{
     text-align: left;
+}
+
+.successMessage{
+    color: green;
+    margin-top: 20px;
 }
